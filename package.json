@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "openai": "^4.27.0"
   }
 }
