@@ -24,6 +24,14 @@ const configuration = new Configuration({
 // Create a new OpenAI API instance with the configuration
 const openai = new OpenAIApi(configuration);
 
+// Event handler for when the bot is ready
+client.on('ready', () => {
+    const BOT_VERSION = '1.0.0';
+    
+    console.info(`Logged in as ${client.user.tag}`);
+    console.log(`Discord Call Bot v${BOT_VERSION} is now connected and ready.`);
+});
+
 // Event handler for when a message is received
 client.on('messageCreate', async function(message) {
     // Use the openai object to create a completion
